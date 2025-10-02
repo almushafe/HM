@@ -46,8 +46,8 @@ HM Web Source Code is a modern e-commerce platform designed for online shopping.
 ### Steps
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/hm-web-source-code.git
-   cd hm-web-source-code
+   https://github.com/almushafe/HM.git
+   cd HM
 
 ### Key Changes Made:
 - **Overview & Features**: Updated to emphasize it's an e-commerce shop (e.g., product browsing, cart, orders). Added common e-commerce features—feel free to edit or add specifics.
