@@ -33,22 +33,37 @@ HM Web Source Code is a modern e-commerce platform designed for online shopping.
 - [Optional: Add others if used, e.g., Axios for API calls, Mongoose for MongoDB ORM, or Tailwind CSS for styling]
 
 ## Project Structure
-hm-web-source-code/
-├── backend/              # FastAPI backend
-│   ├── main.py           # Main app entry point
-│   ├── models/           # MongoDB schemas (e.g., User, Product, Order)
-│   ├── routes/           # API endpoints (e.g., /products, /cart, /orders)
-│   ├── requirements.txt  # Python dependencies
-│   └── .env              # Environment variables (e.g., DB connection)
-├── frontend/             # React frontend
-│   ├── src/
-│   │   ├── components/   # Reusable UI components (e.g., ProductCard, Cart)
-│   │   ├── pages/        # Pages like Home, Shop, Checkout
-│   │   ├── services/     # API calls to backend
-│   │   └── App.js        # Main React app
-│   ├── package.json      # Node dependencies
-│   └── public/           # Static assets
-└── README.md             # This file
+HM/
+├── backend/                    # FastAPI backend for API logic and server
+│   ├── main.py                 # Main entry point for the FastAPI application
+│   ├── models/                 # MongoDB schemas for data models (e.g., User, Product, Order)
+│   │   ├── user.py             # User schema for authentication and profiles
+│   │   ├── product.py          # Product schema for catalog items
+│   │   └── order.py            # Order schema for purchase records
+│   ├── routes/                 # API endpoint definitions
+│   │   ├── products.py         # Endpoints for product management (e.g., /products)
+│   │   ├── cart.py             # Endpoints for cart operations (e.g., /cart)
+│   │   ├── orders.py           # Endpoints for order processing (e.g., /orders)
+│   │   └── auth.py             # Endpoints for user authentication (e.g., /auth)
+│   ├── requirements.txt        # Python dependencies for the backend
+│   └── .env                    # Environment variables (e.g., MongoDB URI, secret keys)
+├── frontend/                   # React frontend for the user interface
+│   ├── src/                    # Source code for React application
+│   │   ├── components/         # Reusable UI components
+│   │   │   ├── ProductCard.js  # Component for displaying product details
+│   │   │   ├── Cart.js         # Component for managing cart UI
+│   │   │   └── Navbar.js       # Component for navigation bar
+│   │   ├── pages/              # Page components for different views
+│   │   │   ├── Home.js         # Homepage with featured products
+│   │   │   ├── Shop.js         # Shop page for browsing products
+│   │   │   ├── Checkout.js     # Checkout page for completing orders
+│   │   │   └── Profile.js      # User profile page
+│   │   ├── services/           # API call functions to interact with backend
+│   │   │   └── api.js          # Helper functions for API requests
+│   │   └── App.js              # Main React app component
+│   ├── package.json            # Node dependencies and scripts
+│   └── public/                 # Static assets (e.g., images, favicon)
+└── README.md                   # Project documentation and setup instructions
 
 ## Installation
 
