@@ -33,7 +33,22 @@ HM Web Source Code is a modern e-commerce platform designed for online shopping.
 - [Optional: Add others if used, e.g., Axios for API calls, Mongoose for MongoDB ORM, or Tailwind CSS for styling]
 
 ## Project Structure
-*(Adjust paths if your structure differs.)*
+hm-web-source-code/
+├── backend/              # FastAPI backend
+│   ├── main.py           # Main app entry point
+│   ├── models/           # MongoDB schemas (e.g., User, Product, Order)
+│   ├── routes/           # API endpoints (e.g., /products, /cart, /orders)
+│   ├── requirements.txt  # Python dependencies
+│   └── .env              # Environment variables (e.g., DB connection)
+├── frontend/             # React frontend
+│   ├── src/
+│   │   ├── components/   # Reusable UI components (e.g., ProductCard, Cart)
+│   │   ├── pages/        # Pages like Home, Shop, Checkout
+│   │   ├── services/     # API calls to backend
+│   │   └── App.js        # Main React app
+│   ├── package.json      # Node dependencies
+│   └── public/           # Static assets
+└── README.md             # This file
 
 ## Installation
 
